@@ -1,23 +1,17 @@
-#nkd_container {
+#nkd_container, #niy_container, #j6_container  {
 	float:left;
 }
 
-#niy_container {
-	float:left;
+#nkd_container, #niy_container {
+    margin-right:23px;
+    border-right:1px solid #777;
+    padding-right:11px;
 }
 
-#j6_container {
-	float:left;
+#nkd_container h2, #j6_container h2, #niy_container h2  {
+    margin-bottom:10px;  
 }
 
-#nkd_container h2 {
-}
-
-#niy_container h2 {
-}
-
-#j6_container h2 {
-}
 
 .bid_price{
     background:#DFF0D8;
@@ -61,5 +55,14 @@
 ul#forms {
 	list-style:none;
 	margin: 0;
+}
+
+#niy_speedbump, #nkd_speedbump, #j6_speedbump {
+    float:right;
+    margin-right:15px;
+}
+
+#retail_order {
+    margin-right:25px;
 }
 
