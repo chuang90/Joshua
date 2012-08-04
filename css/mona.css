@@ -4,7 +4,7 @@
 
 #nkd_container, #niy_container {
     margin-right:23px;
-    border-right:1px solid #777;
+    border-right:1px solid #ccc;
     padding-right:11px;
 }
 
@@ -48,8 +48,9 @@
     text-align:center;
 }
 
-#retail_order {
+#retail_orders_container, #retail_trades_container{
     width:600px;
+    margin-right:27px;
 }
 
 ul#forms {
@@ -60,10 +61,7 @@ ul#forms {
 #niy_speedbump, #nkd_speedbump, #j6_speedbump {
     float:right;
     margin-right:15px;
-}
-
-#retail_order {
-    margin-right:25px;
+    margin-top:5px;
 }
 
 .footer {
