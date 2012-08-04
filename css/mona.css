@@ -84,3 +84,18 @@ ul#forms {
 	border-right: none;
 }
 
+html, body { height: 100%; }
+
+#wrap { min-height: 92%; }
+
+#main {
+	overflow:auto;
+	padding-bottom: 20px;
+}  /* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -20px; /* negative value of footer height */
+	height: 20px;
+	clear:both;
+} 
