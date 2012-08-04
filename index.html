@@ -11,28 +11,38 @@
 
 <body>
   <div id="wrap">
-    <div id="main">  
+    <div id="main">
+      
+      <!-- HEADER -->
       <div class="navbar">
         <div class="navbar-inner">
           <div class="container">
             <div class="brand"> RainMakers </div>
-            <ul class="nav"> 
-              <li> 
-                <a> Do you need an umbrella? Because we're about to make it rain. </a>
-              </li>
-            </ul>
-            <button id="autotrader" class="btn btn-success">Start Autotrader</button>
+              <ul class="nav"> 
+                <li> 
+                  <a> Do you need an umbrella? Because we're about to make it rain. </a>
+                </li>
+              </ul>
+              <button id="autotrader" class="btn btn-success">Start Autotrader</button>
           </div>
         </div>
-      </div>
-  
+      </div> <!-- close navbar -->
+      
+      
+      <!-- TABS -->
       <div class="tabbable">
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tab1" data-toggle="tab">Retail Tables</a></li>
           <li><a href="#tab2" data-toggle="tab">Parameters</a></li>
         </ul>
+        
+        
+        <!-- RETAIL TABLE TAB -->
         <div class="tab-content">
           <div class="tab-pane active" id="tab1">
+        
+            
+            <!-- TOP TABLES -->
             <div class="container well">
               <span id="nkd_container">
                 <h2> 
@@ -122,33 +132,12 @@
                 </table>
               </span>
             </div>
-
-
+            
+            
+            <!-- BOTTOM TABLES-->
             <div class="container">
-              <span class="span6" id="retail_order">
-               <h2> Open Orders </h2>
-               <table id="retail_order" class="table table-bordered">
-                 <thead>
-                   <tr>
-                     <th>Product</th>
-                     <th>Price</th>
-                     <th>Volume</th>
-                     <th>Time Placed</th>
-                   </tr>
-                 </thead>
-                 <tbody>
-                   <tr>
-                     <td>nkd</td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                   </tr>
-                  </tbody>
-                </table>
-              </span>
-
-              <span class="span6" id="retail_order">
-               <h2> Retail Trades </h2>
+              <span class="span6" id="retail_orders_container">
+               <h2> Retail Orders </h2>
                <table id="retail_trade" class="table table-bordered">
                  <thead>
                    <tr>
@@ -159,119 +148,90 @@
                    </tr>
                  </thead>
                  <tbody>
-                   <tr>
-                     <td>niy</td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                   </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
                   </tbody>
                 </table>
               </span>
+              
+              <span class="span6" id="retail_trades_container">
+                 <h2> Retail Trades </h2>
+                 <table id="retail_trade" class="table table-bordered">
+                   <thead>
+                     <tr>
+                       <th>Product</th>
+                       <th>Price</th>
+                       <th>Volume</th>
+                       <th>Time Placed</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </span>
             </div>
-        </div>
-        <div class="tab-pane" id="tab2">
-          <div class="container">
-            <h2> Parameters </h2>
-            <ul id="forms">
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
             
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            
-              <li>
-                <form class="well form-inline">
-                  <input type="text" class="input-small" placeholder="Email">
-                  <input type="password" class="input-small" placeholder="Password">
-                  <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                  </label>
-                  <button type="submit" class="btn">Sign in</button>
-                </form>
-              </li>
-            </ul>
           </div>
+      
+      
+      <!-- PARAMETERS TAB -->
+      <div class="tab-pane" id="tab2">
+        <div class="container">
+          <h2> Parameters </h2>
+          <ul id="forms">
+            <li>
+              <form class="well form-inline">
+                Delta Cap:
+                <input type="text" class="input-small">
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                Delta Cap:
+                <input type="text" class="input-small">
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-   </div>
-  </div>
+      
+      
+      </div> <!--close tab content-->
+    
+      </div> <!-- close tabs-->
+    </div> <!-- close main-->
+  </div><!-- close wrap-->
+  
+  
   <div class="container footer">
     <p> 
-      <span> Created by Mona Huang </span>
-      <span> IMC </span>
+      <span> Created by Team Rainmakers </span>
+      <span> IMC Interns</span>
       <span class="last"> Summer 2012 </span> 
     </p>
   </div>
