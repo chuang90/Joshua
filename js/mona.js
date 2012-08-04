@@ -27,15 +27,18 @@ $(document).ready(function() {
     $('#autotrader').toggle(start_autotrader, stop_autotrader);
     
     function start_autotrader() {
+        $('#nkd_speedbump').hide();
         $('#autotrader').html('Stop Autotrader');
         $('#autotrader').removeClass('btn-success');
         $('#autotrader').addClass('btn-danger');
     }
     
     function stop_autotrader() {
+        $('#nkd_speedbump').show();
+
         $('#autotrader').html('Start Autotrader');
         $('#autotrader').removeClass('btn-danger');
         $('#autotrader').addClass('btn-success');
     }
-}
-)
+    
+})

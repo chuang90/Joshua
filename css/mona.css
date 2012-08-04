@@ -4,7 +4,7 @@
 
 #nkd_container, #niy_container {
     margin-right:23px;
-    border-right:1px solid #777;
+    border-right:1px solid #ccc;
     padding-right:11px;
 }
 
@@ -60,6 +60,7 @@ ul#forms {
 #niy_speedbump, #nkd_speedbump, #j6_speedbump {
     float:right;
     margin-right:15px;
+    margin-top:5px;
 }
 
 #retail_order {
