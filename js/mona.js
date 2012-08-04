@@ -23,5 +23,19 @@ $(document).ready(function() {
 		$rows.first().before(insert_me);
 	});
 
+
+    $('#autotrader').toggle(start_autotrader, stop_autotrader);
+    
+    function start_autotrader() {
+        $('#autotrader').html('Stop Autotrader');
+        $('#autotrader').removeClass('btn-success');
+        $('#autotrader').addClass('btn-danger');
+    }
+    
+    function stop_autotrader() {
+        $('#autotrader').html('Start Autotrader');
+        $('#autotrader').removeClass('btn-danger');
+        $('#autotrader').addClass('btn-success');
+    }
 }
 )
