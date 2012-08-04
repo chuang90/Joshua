@@ -11,25 +11,37 @@
 }
 
 #nkd_container h2 {
-	float:left;
 }
 
 #niy_container h2 {
-	float:left;
 }
 
 #j6_container h2 {
-	float:left;
+}
+
+.bid_price{
+    background:#DFF0D8;
+}
+
+.ask_price{
+    background:#F2DEDE;
+}
+
+.container{
+    width:1300px;
 }
 
 #nkd {
-	width: 300px;
+    margin-right:10px;
+	width: 400px;
 }
 
 #niy {
-	width: 300px;
+    margin-right:10px;
+	width: 400px;
 }
 
 #j6 {
-	width: 300px;
+    margin-right:10px;
+	width: 400px;
 }
