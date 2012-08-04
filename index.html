@@ -10,16 +10,25 @@
 </head>
 
 <body>
-  <h1> hello, joshua! </h1>
-
-  <form id='form'>
-    Input: <input type='text' id='my_input' />
-    <input type='submit' value='Submit' id = 'my_submit'/>
-  </form>
-
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="brand"> RainMakers </div>
+        <ul class="nav"> 
+          <li> 
+            <a> Do you need an umbrella? Because we're about to make it rain. </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container autotrader">
+    <button id="autotrader" class="btn btn-success">Start Autotrader</button>
+  </div>
+  
   <div class="container well">
     <span id="nkd_container">
-      <button id="add" class="btn btn-success">Add</button>
       <h2> NKD </h2>
       <table id="nkd" class="table table-bordered">
         <thead>
@@ -45,6 +54,8 @@
           </tr>
         </tbody>
       </table>
+      <button id="add" class="btn btn-success">Add</button>
+      
     </span>
     
     <span id="niy_container">
@@ -87,6 +98,53 @@
             <td></td>
             <td></td>
           </tr>
+        </tbody>
+      </table>
+    </span>
+  </div>
+  
+  
+  <div class="container">
+    <span class="span6" id="retail_order">
+     <h2> Open Orders </h2>
+     <table id="retail_order" class="table table-bordered">
+       <thead>
+         <tr>
+           <th>Product</th>
+           <th>Price</th>
+           <th>Volume</th>
+           <th>Time Placed</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>nkd</td>
+           <td></td>
+           <td></td>
+           <td></td>
+         </tr>
+        </tbody>
+      </table>
+    </span>
+  
+    <span class="span6" id="retail_order">
+     <h2> Retail Trades </h2>
+     <table id="retail_trade" class="table table-bordered">
+       <thead>
+         <tr>
+           <th>Product</th>
+           <th>Price</th>
+           <th>Volume</th>
+           <th>Time Placed</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>niy</td>
+           <td></td>
+           <td></td>
+           <td></td>
+         </tr>
         </tbody>
       </table>
     </span>

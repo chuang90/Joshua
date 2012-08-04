@@ -31,17 +31,31 @@
     width:1300px;
 }
 
-#nkd {
+#nkd, #niy, #j6 {
     margin-right:10px;
 	width: 400px;
 }
 
-#niy {
-    margin-right:10px;
-	width: 400px;
+.container.autotrader {
+    margin-left:12px;
+    margin-bottom:25px;
+
 }
 
-#j6 {
-    margin-right:10px;
-	width: 400px;
+#autotrader {
+    padding:20px;
+    font-size:20px;
 }
+.table thead th {
+    text-align:center;
+}
+
+.table td {
+    padding:2px;
+    text-align:center;
+}
+
+#retail_order {
+    width:600px;
+}
+
