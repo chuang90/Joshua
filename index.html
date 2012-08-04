@@ -19,135 +19,235 @@
             <a> Do you need an umbrella? Because we're about to make it rain. </a>
           </li>
         </ul>
+        <button id="autotrader" class="btn btn-success">Start Autotrader</button>
       </div>
     </div>
   </div>
   
-  <div class="container autotrader">
-    <button id="autotrader" class="btn btn-success">Start Autotrader</button>
-  </div>
-  
-  <div class="container well">
-    <span id="nkd_container">
-      <h2> NKD </h2>
-      <table id="nkd" class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Bid Volume</th>
-            <th class="bid_price">Bid Price</th>
-            <th class="ask_price">Ask Price</th>
-            <th>Ask Volume</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>10</td>
-            <td class="bid_price">$1.00</td>
-            <td class="ask_price">$2.00</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td class="bid_price">$2.00</td>
-            <td class="ask_price">$3.00</td>
-            <td>30</td>
-          </tr>
-        </tbody>
-      </table>
-      <button id="add" class="btn btn-success">Add</button>
-      
-    </span>
-    
-    <span id="niy_container">
-      <h2> NIY </h2>
-      <table id="niy" class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Bid Volume</th>
-            <th class="bid_price">Bid Price</th>
-            <th class="ask_price">Ask Price</th>
-            <th>Ask Volume</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </span>
-    
-    <span id="j6_container">
-      <h2> 6j </h2>
-      <table id="j6" class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Bid Volume</th>
-            <th class="bid_price">Bid Price</th>
-            <th class="ask_price">Ask Price</th>
-            <th>Ask Volume</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </span>
-  </div>
-  
-  
-  <div class="container">
-    <span class="span6" id="retail_order">
-     <h2> Open Orders </h2>
-     <table id="retail_order" class="table table-bordered">
-       <thead>
-         <tr>
-           <th>Product</th>
-           <th>Price</th>
-           <th>Volume</th>
-           <th>Time Placed</th>
-         </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <td>nkd</td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-        </tbody>
-      </table>
-    </span>
-  
-    <span class="span6" id="retail_order">
-     <h2> Retail Trades </h2>
-     <table id="retail_trade" class="table table-bordered">
-       <thead>
-         <tr>
-           <th>Product</th>
-           <th>Price</th>
-           <th>Volume</th>
-           <th>Time Placed</th>
-         </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <td>niy</td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-        </tbody>
-      </table>
-    </span>
+  <div class="tabbable">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">Retail Tables</a></li>
+      <li><a href="#tab2" data-toggle="tab">Parameters</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <div class="container well">
+          <span id="nkd_container">
+            <h2> NKD </h2>
+            <table id="nkd" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Bid Volume</th>
+                  <th class="bid_price">Bid Price</th>
+                  <th class="ask_price">Ask Price</th>
+                  <th>Ask Volume</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td class="bid_price">$1.00</td>
+                  <td class="ask_price">$2.00</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td class="bid_price">$2.00</td>
+                  <td class="ask_price">$3.00</td>
+                  <td>30</td>
+                </tr>
+              </tbody>
+            </table>
+            <button id="add" class="btn btn-success">Add</button>
+          </span>
+
+          <span id="niy_container">
+            <h2> NIY </h2>
+            <table id="niy" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Bid Volume</th>
+                  <th class="bid_price">Bid Price</th>
+                  <th class="ask_price">Ask Price</th>
+                  <th>Ask Volume</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </span>
+
+          <span id="j6_container">
+            <h2> 6j </h2>
+            <table id="j6" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Bid Volume</th>
+                  <th class="bid_price">Bid Price</th>
+                  <th class="ask_price">Ask Price</th>
+                  <th>Ask Volume</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </span>
+        </div>
+
+
+        <div class="container">
+          <span class="span6" id="retail_order">
+           <h2> Open Orders </h2>
+           <table id="retail_order" class="table table-bordered">
+             <thead>
+               <tr>
+                 <th>Product</th>
+                 <th>Price</th>
+                 <th>Volume</th>
+                 <th>Time Placed</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>nkd</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+               </tr>
+              </tbody>
+            </table>
+          </span>
+
+          <span class="span6" id="retail_order">
+           <h2> Retail Trades </h2>
+           <table id="retail_trade" class="table table-bordered">
+             <thead>
+               <tr>
+                 <th>Product</th>
+                 <th>Price</th>
+                 <th>Volume</th>
+                 <th>Time Placed</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>niy</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+               </tr>
+              </tbody>
+            </table>
+          </span>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab2">
+        <div class="container">
+          <h2> Parameters </h2>
+          <ul id="forms">
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+            
+            <li>
+              <form class="well form-inline">
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

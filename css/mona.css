@@ -43,8 +43,7 @@
 }
 
 #autotrader {
-    padding:20px;
-    font-size:20px;
+	float: right;
 }
 .table thead th {
     text-align:center;
@@ -57,5 +56,10 @@
 
 #retail_order {
     width:600px;
+}
+
+ul#forms {
+	list-style:none;
+	margin: 0;
 }
 
