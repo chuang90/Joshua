@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/mona.js"></script>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css"></script>
-<title>Test Test Test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/mona.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/mona.css"></link>
+  <title>Test Test Test</title>
 </head>
 
 <body>
-<h1> hello, joshua! </h1>
+  <h1> hello, joshua! </h1>
 
-<form id='form'>
-Username: <input type='text' id='my_input' />
-<input type='submit' value='Submit' id = 'my_submit'/>
-</form>
+  <form id='form'>
+    Input: <input type='text' id='my_input' />
+    <input type='submit' value='Submit' id = 'my_submit'/>
+  </form>
 
-<table>
-  <thead>
-    <tr>
-      <th>…</th>
-      <th>…</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>…</td>
-      <td>…</td>
-    </tr>
-  </tbody>
-</table>
- 
+  <div class="container well">
+    <span id="nkd_container">
+      <h2> NKD </h2>
+      <table id="nkd" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Bid Volume</th>
+            <th>Bid Price</th>
+            <th>Ask Price</th>
+            <th>Ask Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+    
+    <span id="niy_container">
+      <h2> NIY </h2>
+      <table id="niy" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Bid Volume</th>
+            <th>Bid Price</th>
+            <th>Ask Price</th>
+            <th>Ask Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+    
+    <span id="j6_container">
+      <h2> 6j </h2>
+      <table id="j6" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Bid Volume</th>
+            <th>Bid Price</th>
+            <th>Ask Price</th>
+            <th>Ask Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+  </div>
 </body>
 
 </html>
