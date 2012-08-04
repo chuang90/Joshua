@@ -63,3 +63,20 @@ ul#forms {
 	margin: 0;
 }
 
+.footer {
+	padding-top: 10px;
+	border-top: 1px solid #eee;
+	color: #999;
+}
+
+.footer span {
+	padding-left: 8px;
+	padding-right: 5px;
+	border-right: 1px solid #ddd;
+	margin: 0;
+}
+
+.footer span.last {
+	border-right: none;
+}
+
