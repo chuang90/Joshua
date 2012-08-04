@@ -48,8 +48,9 @@
     text-align:center;
 }
 
-#retail_order {
+#retail_orders_container, #retail_trades_container{
     width:600px;
+    margin-right:27px;
 }
 
 ul#forms {
@@ -61,10 +62,6 @@ ul#forms {
     float:right;
     margin-right:15px;
     margin-top:5px;
-}
-
-#retail_order {
-    margin-right:25px;
 }
 
 .footer {
@@ -85,3 +82,18 @@ ul#forms {
 	border-right: none;
 }
 
+html, body { height: 100%; }
+
+#wrap { min-height: 92%; }
+
+#main {
+	overflow:auto;
+	padding-bottom: 20px;
+}  /* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -20px; /* negative value of footer height */
+	height: 20px;
+	clear:both;
+} 

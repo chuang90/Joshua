@@ -10,170 +10,193 @@
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <div class="container">
-        <div class="brand"> RainMakers </div>
-        <ul class="nav"> 
-          <li> 
-            <a> Do you need an umbrella? Because we're about to make it rain. </a>
-          </li>
+  <div id="wrap">
+    <div id="main">
+      
+      
+      <!-- HEADER -->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <div class="brand"> RainMakers </div>
+            <ul class="nav"> 
+              <li> 
+                <a> Do you need an umbrella? Because we're about to make it rain. </a>
+              </li>
+            </ul>
+            <button id="autotrader" class="btn btn-success">Start Autotrader</button>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- TABS -->
+      <div class="tabbable">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab">Retail Tables</a></li>
+          <li><a href="#tab2" data-toggle="tab">Parameters</a></li>
         </ul>
-        <button id="autotrader" class="btn btn-success">Start Autotrader</button>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tabbable">
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab1" data-toggle="tab">Retail Tables</a></li>
-      <li><a href="#tab2" data-toggle="tab">Parameters</a></li>
-    </ul>
-    <div class="tab-content">
-      <div class="tab-pane active" id="tab1">
-        <div class="container well">
-          <span id="nkd_container">
-            <h2> 
-              NKD 
-              <button id="nkd_speedbump" class="btn btn-warning">Kill NKD Speed Bump</button>
-            </h2>
-            <table id="nkd" class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Bid Volume</th>
-                  <th class="bid_price">Bid Price</th>
-                  <th class="ask_price">Ask Price</th>
-                  <th>Ask Volume</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>10</td>
-                  <td class="bid_price">$1.00</td>
-                  <td class="ask_price">$2.00</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td class="bid_price">$2.00</td>
-                  <td class="ask_price">$3.00</td>
-                  <td>30</td>
-                </tr>
-              </tbody>
-            </table>
-          </span>
-
-          <span id="niy_container">
-            <h2> 
-              NIY 
-              <button id="niy_speedbump" class="btn btn-warning">Kill NIY Speed Bump</button>
-            </h2>
-            <table id="niy" class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Bid Volume</th>
-                  <th class="bid_price">Bid Price</th>
-                  <th class="ask_price">Ask Price</th>
-                  <th>Ask Volume</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </span>
-
-          <span id="j6_container">
-            <h2> 
-              6j 
-              <button id="j6_speedbump" class="btn btn-warning">Kill 6J Speed Bump</button>
-            </h2>
+        
+        
+        <!-- RETAIL TABLE TAB -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+        
             
-            <table id="j6" class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Bid Volume</th>
-                  <th class="bid_price">Bid Price</th>
-                  <th class="ask_price">Ask Price</th>
-                  <th>Ask Volume</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </span>
-        </div>
+            <!-- TOP TABLES -->
+            <div class="container well">
+              <span id="nkd_container">
+                <h2> 
+                  NKD 
+                  <button id="nkd_speedbump" class="btn btn-warning">Kill NKD Speed Bump</button>
+                </h2>
+                <table id="nkd" class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Bid Volume</th>
+                      <th class="bid_price">Bid Price</th>
+                      <th class="ask_price">Ask Price</th>
+                      <th>Ask Volume</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td class="bid_price">$1.00</td>
+                      <td class="ask_price">$2.00</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td class="bid_price">$2.00</td>
+                      <td class="ask_price">$3.00</td>
+                      <td>30</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </span>
 
+              <span id="niy_container">
+                <h2> 
+                  NIY 
+                  <button id="niy_speedbump" class="btn btn-warning">Kill NIY Speed Bump</button>
+                </h2>
+                <table id="niy" class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Bid Volume</th>
+                      <th class="bid_price">Bid Price</th>
+                      <th class="ask_price">Ask Price</th>
+                      <th>Ask Volume</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </span>
 
-        <div class="container">
-          <span class="span6" id="retail_order">
-           <h2> Open Orders </h2>
-           <table id="retail_order" class="table table-bordered">
-             <thead>
-               <tr>
-                 <th>Product</th>
-                 <th>Price</th>
-                 <th>Volume</th>
-                 <th>Time Placed</th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>nkd</td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-               </tr>
-              </tbody>
-            </table>
-          </span>
-
-          <span class="span6" id="retail_order">
-           <h2> Retail Trades </h2>
-           <table id="retail_trade" class="table table-bordered">
-             <thead>
-               <tr>
-                 <th>Product</th>
-                 <th>Price</th>
-                 <th>Volume</th>
-                 <th>Time Placed</th>
-               </tr>
-             </thead>
-             <tbody>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </span>
-        </div>
+              <span id="j6_container">
+                <h2> 
+                  6j 
+                  <button id="j6_speedbump" class="btn btn-warning">Kill 6J Speed Bump</button>
+                </h2>
+            
+                <table id="j6" class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Bid Volume</th>
+                      <th class="bid_price">Bid Price</th>
+                      <th class="ask_price">Ask Price</th>
+                      <th>Ask Volume</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </span>
+            </div>
+            
+            
+            <!-- BOTTOM TABLES-->
+            <div class="container">
+              <span class="span6" id="retail_orders_container">
+               <h2> Retail Orders </h2>
+               <table id="retail_trade" class="table table-bordered">
+                 <thead>
+                   <tr>
+                     <th>Product</th>
+                     <th>Price</th>
+                     <th>Volume</th>
+                     <th>Time Placed</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </span>
+              
+              <span class="span6" id="retail_trades_container">
+                 <h2> Retail Trades </h2>
+                 <table id="retail_trade" class="table table-bordered">
+                   <thead>
+                     <tr>
+                       <th>Product</th>
+                       <th>Price</th>
+                       <th>Volume</th>
+                       <th>Time Placed</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </span>
+            </div>
       </div>
+      
+      
+      <!-- PARAMETERS TAB -->
       <div class="tab-pane" id="tab2">
         <div class="container">
           <h2> Parameters </h2>
@@ -196,8 +219,11 @@
           </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </div> <!-- close tabs-->
+    
+   </div> <!-- close main-->
+  </div> <!-- close wrap-->
+  
   
   <div class="container footer">
     <p> 
